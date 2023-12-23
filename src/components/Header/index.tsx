@@ -14,7 +14,11 @@ export function Header() {
         <Image src={logo} alt="Logo" />
       </figure>
       <NavBar />
-      <ButtonSmall icons={<Sun weight="bold" />} variant="bold" />
+      <ButtonSmall
+        icons={<Sun weight="bold" />}
+        variant="bold"
+        linkSocial={''}
+      />
     </header>
   )
 }

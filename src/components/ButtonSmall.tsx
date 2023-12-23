@@ -1,3 +1,5 @@
+'use client'
+
 import { ReactNode } from 'react'
 import { tv, VariantProps } from 'tailwind-variants'
 
@@ -30,16 +32,23 @@ const ButtonSmallVariants = tv({
 export interface ButtonSmallProps
   extends VariantProps<typeof ButtonSmallVariants> {
   icons: ReactNode
+  title?: string
+  linkSocial?: string
 }
 
-export function ButtonSmall({ icons, variant, ...props }: ButtonSmallProps) {
+export function ButtonSmall({
+  icons,
+  variant,
+  linkSocial,
+  ...props
+}: ButtonSmallProps) {
   const { container, icon } = ButtonSmallVariants({ variant })
   return (
     <button className={container()} {...props}>
       <div
         className={`flex h-full w-full items-center justify-center${icon()}`}
       >
-        {icons}
+        <a href={linkSocial}>{icons}</a>
       </div>
     </button>
   )

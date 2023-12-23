@@ -1,6 +1,10 @@
+'use client'
+
 import Image from 'next/image'
 import Profile from '../../assets/profile-lucas.png'
 import { Paragraph } from '../Paragraph'
+import { ButtonSmall } from '../ButtonSmall'
+import { GithubLogo, LinkedinLogo } from 'phosphor-react'
 
 export function About() {
   return (
@@ -29,6 +33,25 @@ export function About() {
           pesquisas, leituras e gosto de construir projetos pessoais para
           aprender praticando.
         </Paragraph>
+        <section>
+          <h2 className="font-contrail_one mt-12 text-2xl">
+            Minhas redes sociais
+          </h2>
+          <div className="flex gap-4 mt-4">
+            <ButtonSmall
+              title="GitHub"
+              icons={<GithubLogo weight="fill" className="h-6 w-6" />}
+              linkSocial={'https://github.com/LucasfNeves'}
+            />
+            <ButtonSmall
+              title="Linkedin"
+              icons={<LinkedinLogo weight="fill" className="h-6 w-6" />}
+              linkSocial={
+                'https://www.linkedin.com/in/lucas-farias-das-neves-118845239/'
+              }
+            />
+          </div>
+        </section>
       </div>
     </div>
   )
