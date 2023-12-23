@@ -1,8 +1,22 @@
+/* eslint-disable camelcase */
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Roboto, Contrail_One } from 'next/font/google'
 import './globals.css'
+import { Header } from '@/components/Header'
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-roboto',
+})
+
+const contrailOne = Contrail_One({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-contrail-one',
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,8 +29,20 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="pt-br" className="antialiased">
+      <head>
+        <title>Lucas Farias das Neves</title>
+      </head>
+      <body className={`${roboto.variable} ${contrailOne.variable}`}>
+        <div className="flex min-h-screen flex-col justify-start bg-neutral-900 ">
+          <Header />
+          <main className="relative  mx-auto w-full max-w-[76rem]">
+            {children}
+          </main>
+        </div>
+      </body>
     </html>
   )
 }
+
+// No arquivo layout é adicionado todo o conteudo que serão renderizados em todas as páginas do site.
