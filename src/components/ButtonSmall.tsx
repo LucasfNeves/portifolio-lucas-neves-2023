@@ -1,5 +1,7 @@
 'use client'
 
+import { Url } from 'next/dist/shared/lib/router/router'
+import Link from 'next/link'
 import { ReactNode } from 'react'
 import { tv, VariantProps } from 'tailwind-variants'
 
@@ -33,7 +35,7 @@ export interface ButtonSmallProps
   extends VariantProps<typeof ButtonSmallVariants> {
   icons: ReactNode
   title?: string
-  linkSocial?: string
+  linkSocial: Url
 }
 
 export function ButtonSmall({
@@ -48,7 +50,7 @@ export function ButtonSmall({
       <div
         className={`flex h-full w-full items-center justify-center${icon()}`}
       >
-        <a href={linkSocial}>{icons}</a>
+        <Link href={linkSocial}> {icons} </Link>
       </div>
     </button>
   )

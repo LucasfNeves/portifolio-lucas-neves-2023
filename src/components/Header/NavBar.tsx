@@ -3,36 +3,48 @@
 import { useState } from 'react'
 import { NavOptions } from './NavOptions'
 
-export function NavBar() {
-  const [navOptionsSelected, setNavOptionsSelected] = useState<number | null>(0)
+const menuOptions = [
+  {
+    text: 'Sobre',
+    id: 'about',
+  },
+  {
+    text: 'Tecnologias',
+    id: 'techs',
+  },
+  {
+    text: 'Projetos',
+    id: 'projects',
+  },
+  {
+    text: 'Carreira',
+    id: 'career',
+  },
+  {
+    text: 'Contatos',
+    id: 'contacts',
+  },
+]
 
-  function handleNavOptions(index: number) {
-    setNavOptionsSelected(index)
+export function NavBar() {
+  const [navOptionsSelected, setNavOptionsSelected] = useState<string>('about')
+
+  function handleNavOptions(itemId: string) {
+    setNavOptionsSelected(itemId)
   }
 
   return (
     <nav>
       <ul className="flex gap-5">
-        <NavOptions
-          text="Sobre"
-          onSelect={() => handleNavOptions(0)}
-          selected={navOptionsSelected === 0}
-        />
-        <NavOptions
-          text="Tecnologias"
-          onSelect={() => handleNavOptions(1)}
-          selected={navOptionsSelected === 1}
-        />
-        <NavOptions
-          text="Projetos"
-          onSelect={() => handleNavOptions(2)}
-          selected={navOptionsSelected === 2}
-        />
-        <NavOptions
-          text="Contatos"
-          onSelect={() => handleNavOptions(3)}
-          selected={navOptionsSelected === 3}
-        />
+        {menuOptions.map((option) => (
+          <NavOptions
+            key={option.id}
+            text={option.text}
+            onSelect={() => handleNavOptions(option.id)}
+            selected={navOptionsSelected === option.id}
+            id={option.id}
+          />
+        ))}
       </ul>
     </nav>
   )
