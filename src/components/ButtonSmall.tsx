@@ -46,12 +46,14 @@ export function ButtonSmall({
 }: ButtonSmallProps) {
   const { container, icon } = ButtonSmallVariants({ variant })
   return (
-    <button className={container()} {...props}>
-      <div
-        className={`flex h-full w-full items-center justify-center${icon()}`}
-      >
-        <Link href={linkSocial}> {icons} </Link>
-      </div>
-    </button>
+    <Link target="_blank" href={linkSocial}>
+      <button className={container()} {...props}>
+        <div
+          className={`flex h-full w-full items-center justify-center${icon()}`}
+        >
+          {icons}
+        </div>
+      </button>
+    </Link>
   )
 }
