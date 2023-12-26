@@ -3,6 +3,8 @@ import type { Metadata } from 'next'
 import { Roboto, Contrail_One } from 'next/font/google'
 import './globals.css'
 import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
+import { NavMenuProvider } from '@/context/NavMenu'
 
 const roboto = Roboto({
   weight: ['400', '700'],
@@ -34,12 +36,15 @@ export default function RootLayout({
         <title>Lucas Farias das Neves</title>
       </head>
       <body className={`${roboto.variable} ${contrailOne.variable}`}>
-        <div className="flex min-h-screen flex-col justify-start bg-neutral-900 ">
-          <Header />
-          <main className="relative  mx-auto w-full max-w-[76rem]">
-            {children}
-          </main>
-        </div>
+        <NavMenuProvider>
+          <div className="relative flex min-h-screen flex-col justify-start bg-neutral-900 ">
+            <Header />
+            <main className="relative mb-24  mx-auto w-full max-w-[76rem]">
+              {children}
+            </main>
+            <Footer />
+          </div>
+        </NavMenuProvider>
       </body>
     </html>
   )

@@ -1,37 +1,10 @@
 'use client'
 
-import { useState } from 'react'
 import { NavOptions } from './NavOptions'
-
-const menuOptions = [
-  {
-    text: 'Sobre',
-    id: 'about',
-  },
-  {
-    text: 'Tecnologias',
-    id: 'techs',
-  },
-  {
-    text: 'Projetos',
-    id: 'projects',
-  },
-  {
-    text: 'Carreira',
-    id: 'career',
-  },
-  {
-    text: 'Contatos',
-    id: 'contacts',
-  },
-]
+import { useNavMenu } from '@/context/NavMenu'
 
 export function NavBar() {
-  const [navOptionsSelected, setNavOptionsSelected] = useState<string>('about')
-
-  function handleNavOptions(itemId: string) {
-    setNavOptionsSelected(itemId)
-  }
+  const { handleNavOptions, navOptionsSelected, menuOptions } = useNavMenu()
 
   return (
     <nav>
