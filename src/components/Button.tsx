@@ -20,6 +20,11 @@ const ButtonVariants = tv({
           'bg-cyan-400 hover:bg-cyan-300 w-[13rem] rounded-3xl h-12 text-neutral-900',
         iconV: 'text-neutral-900',
       },
+      Curriculum: {
+        container:
+          'button rounded-md bg-cyan-400 px-3 py-3 text-zinc-800 hover:bg-cyan-300 mt-4',
+      },
+      iconV: ' text-gray-800',
     },
   },
 
@@ -32,12 +37,13 @@ export interface ButtonProps extends VariantProps<typeof ButtonVariants> {
   title: string
   icon?: ReactNode
   link: Url
+  target?: string
 }
 
-export function Button({ ...props }: ButtonProps) {
+export function Button({ target, ...props }: ButtonProps) {
   const { container, iconV } = ButtonVariants({ variant: props.variant })
   return (
-    <Link href={props.link}>
+    <Link target={target} href={props.link}>
       <button type="button" className={container()} {...props}>
         <div className={iconV()}>{props.icon}</div>
         {props.title}
