@@ -44,10 +44,6 @@ export function NavMenuProvider({ children }: NavMenuProviderProps) {
       id: 'projects',
     },
     {
-      text: 'Carreira',
-      id: 'career',
-    },
-    {
       text: 'Contatos',
       id: 'contacts',
     },
