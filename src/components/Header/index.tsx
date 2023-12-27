@@ -9,7 +9,7 @@ import { ButtonSmall } from '../ButtonSmall'
 
 export function Header() {
   return (
-    <header className="sticky left-0 right-0 top-0 z-10 mx-auto  flex h-[5rem] w-full max-w-[76rem] items-center justify-between bg-neutral-900">
+    <header className=" hidden sticky left-0 right-0 top-0 z-10 mx-auto  lg:flex h-[5rem] w-full max-w-[76rem] items-center justify-between bg-neutral-900">
       <figure>
         <Image src={logo} alt="Logo" />
       </figure>

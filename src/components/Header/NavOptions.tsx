@@ -24,7 +24,7 @@ export function NavOptions({ text, activeItem, id }: NavOptionsProps) {
       spy
       smooth
       duration={800}
-      offset={-80}
+      offset={-100}
       onSetActive={() => handleNavOptions(id)}
     >
       <li

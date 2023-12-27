@@ -18,7 +18,7 @@ export function CardProject({
   image,
 }: CardProjectProps) {
   return (
-    <article className="group relative min-w-[24rem] min-h-[21.5rem] bg-gray-800 px-7 flex items-start flex-col hover:scale-105  justify-center rounded-2xl trasition duration-200 ease-in-out hover:bg-opacity-50">
+    <article className="group relative w-full lg:w-[24rem] min-h-[21.5rem] bg-gray-800 px-7 flex items-start flex-col hover:scale-105  justify-center rounded-2xl trasition duration-200 ease-in-out hover:bg-opacity-50">
       <figure className="trasition duration-200 ease-in-out group-hover:opacity-50 mb-2">
         <Image width={338} height={190.04} src={image} alt={''} />
       </figure>
