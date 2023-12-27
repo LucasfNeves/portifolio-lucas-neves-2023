@@ -22,7 +22,7 @@ export function CardProject({
       <figure className="trasition duration-200 ease-in-out group-hover:opacity-50 mb-2">
         <Image width={338} height={190.04} src={image} alt={''} />
       </figure>
-      <div className="group-hover:opacity-50 trasition flex flex-col items-center lg:items-start duration-200 ease-in-out">
+      <div className="group-hover:opacity-50 trasition flex flex-col items-start duration-200 ease-in-out">
         {' '}
         <small className="text-sm font-robot text-white mb-1">{date}</small>
         <h1 className="text-base font-robot font-bold text-white mb-1">
