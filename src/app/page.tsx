@@ -1,9 +1,8 @@
 import { Section } from '@/components/Section'
 import { About } from '@/components/About'
 import { Technologies } from '@/components/Technologies'
-import { ContainerProjects } from '@/components/Projects/ContainerProjects'
-import { ProjectsLegend } from '@/components/Projects/ProjectsLegend'
 import { Contacts } from '@/components/Contacts'
+import { Projects } from '@/components/Projects'
 
 export default function Home() {
   return (
@@ -23,8 +22,7 @@ export default function Home() {
         <h3 className="font-contrail_one mb-2 w-full text-start text-cyan-400">
           Projetos
         </h3>
-        <ProjectsLegend />
-        <ContainerProjects />
+        <Projects />
       </Section>
 
       <Section id="contacts">
