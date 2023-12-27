@@ -39,7 +39,7 @@ export default function RootLayout({
         <NavMenuProvider>
           <div className="relative flex min-h-screen flex-col justify-start bg-neutral-900 ">
             <Header />
-            <main className="relative mb-24 flex flex-col mx-auto w-full max-w-[76rem]">
+            <main className="relative mb-10 flex flex-col mx-auto w-full max-w-[76rem]">
               {children}
             </main>
             <Footer />
