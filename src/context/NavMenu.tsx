@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+
 'use client'
 
 import {
@@ -13,12 +15,12 @@ interface NavMenuContextProps {
     text: string
     id: string
   }[]
+  activeId: string | null
   handleNavOptions: (itemId: string) => void
-  navOptionsSelected: string
 }
 
 export const NavMenuContext = createContext<NavMenuContextProps>(
-  {} as NavMenuContextProps,
+  {} as NavMenuContextProps
 )
 
 interface NavMenuProviderProps {
@@ -26,7 +28,7 @@ interface NavMenuProviderProps {
 }
 
 export function NavMenuProvider({ children }: NavMenuProviderProps) {
-  const [navOptionsSelected, setNavOptionsSelected] = useState<string>('about')
+  const [activeId, setActiveId] = useState<string | null>('about')
 
   const menuOptions = [
     {
@@ -52,17 +54,23 @@ export function NavMenuProvider({ children }: NavMenuProviderProps) {
   ]
 
   function handleNavOptions(itemId: string) {
-    setNavOptionsSelected(itemId)
+    setActiveId(itemId)
   }
 
   useEffect(() => {
     // Scroll para o topo da página quando o componente é recarregado
-    window.scrollTo(0, 0)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+
+    setActiveId('about')
   }, [])
 
   return (
     <NavMenuContext.Provider
-      value={{ handleNavOptions, navOptionsSelected, menuOptions }}
+      value={{
+        handleNavOptions,
+        menuOptions,
+        activeId,
+      }}
     >
       {children}
     </NavMenuContext.Provider>

@@ -4,7 +4,7 @@ import { NavOptions } from './NavOptions'
 import { useNavMenu } from '@/context/NavMenu'
 
 export function NavBar() {
-  const { handleNavOptions, navOptionsSelected, menuOptions } = useNavMenu()
+  const { handleNavOptions, menuOptions } = useNavMenu()
 
   return (
     <nav>
@@ -13,8 +13,7 @@ export function NavBar() {
           <NavOptions
             key={option.id}
             text={option.text}
-            onSelect={() => handleNavOptions(option.id)}
-            selected={navOptionsSelected === option.id}
+            activeItem={() => handleNavOptions(option.id)}
             id={option.id}
           />
         ))}

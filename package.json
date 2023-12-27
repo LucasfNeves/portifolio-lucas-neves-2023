@@ -12,11 +12,13 @@
   "dependencies": {
     "@phosphor-icons/react": "^2.0.15",
     "framer-motion": "^10.16.16",
+    "import": "^0.0.6",
     "next": "14.0.4",
     "phosphor-react": "^1.4.1",
     "react": "^18",
     "react-dom": "^18",
     "react-scroll": "^1.9.0",
+    "react-scrollspy": "^3.4.3",
     "tailwind-variants": "^0.1.19"
   },
   "devDependencies": {
@@ -25,6 +27,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/react-scroll": "^1.8.10",
+    "@types/react-scrollspy": "^3.3.9",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
