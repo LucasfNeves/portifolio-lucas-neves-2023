@@ -25,6 +25,7 @@ export function Contacts() {
             variant="SectionContact"
             title="Enviar mensagem"
             link="https://wa.me/5511913302042"
+            target="_blank"
           />
         </div>
         <Footer />
