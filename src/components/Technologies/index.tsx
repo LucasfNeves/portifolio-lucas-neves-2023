@@ -10,7 +10,7 @@ import { Button } from '../Button'
 
 export function Technologies() {
   return (
-    <div className="grid  h-[36.25rem]  w-full grid-cols-2 rounded-2xl bg-gray-800 px-16 py-14">
+    <div className="flex flex-col gap-4 items-center px-4 py-10 justify-center lg:grid lg:h-[36.25rem] lg:gap-0 w-full lg:grid-cols-2 rounded-2xl bg-gray-800 lg:px-16 lg:py-14">
       <figure className="justify-strat flex items-center">
         <Image
           height={345.65}
@@ -19,7 +19,7 @@ export function Technologies() {
           alt={'coded typing image'}
         />
       </figure>
-      <div className="flex w-full flex-col items-start justify-start ">
+      <div className="flex w-full flex-col items-center justify-center gap-4 lg:gap-0 lg:items-start lg:justify-start ">
         <IconsTechs />
         <Describe />
 

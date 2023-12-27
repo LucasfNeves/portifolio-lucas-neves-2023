@@ -5,7 +5,7 @@ import { ButtonSmall } from '../ButtonSmall'
 
 export function Footer() {
   return (
-    <footer className="flex gap-6 justify-center items-center absolute bottom-0 right-0 w-full h-[5rem] border-t-2 border-cyan-400">
+    <footer className="flex gap-6 justify-center items-center lg:absolute lg:bottom-0 lg:right-0 w-full h-[5rem] border-t-2 border-cyan-400">
       <ButtonSmall
         variant="regular"
         icons={<LinkedinLogo className="h-7 w-7" />}

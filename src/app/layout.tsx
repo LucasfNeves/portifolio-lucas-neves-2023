@@ -37,9 +37,9 @@ export default function RootLayout({
       </head>
       <body className={`${roboto.variable} ${contrailOne.variable}`}>
         <NavMenuProvider>
-          <div className="relative flex min-h-screen flex-col justify-start bg-neutral-900 ">
+          <div className="relative flex flex-col w-full gap-5 justify-start bg-neutral-900 ">
             <Header />
-            <main className="relative mb-10 flex flex-col mx-auto w-full max-w-[76rem]">
+            <main className="w-screen h-fit gap-14 lg:gap-0 lb:mb-10 flex flex-col lg:mx-auto bg-neutral-900 lg:w-full lg:max-w-[76rem]">
               {children}
             </main>
             <Footer />

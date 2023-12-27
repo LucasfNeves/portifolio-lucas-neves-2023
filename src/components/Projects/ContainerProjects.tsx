@@ -11,13 +11,13 @@ const projectsList = [
     image: ImageDeliveryBurguer,
   },
   {
-    title: 'Delivery Burguer',
+    title: 'Delivery Burguer2',
     date: 'Nov - 2023',
     description: 'Plataforma para pedidos de hambúrguer',
     image: ImageDeliveryBurguer,
   },
   {
-    title: 'Delivery Burguer',
+    title: 'Delivery Burguer3',
     date: 'Nov - 2023',
     description: 'Plataforma para pedidos de hambúrguer',
     image: ImageDeliveryBurguer,
@@ -26,7 +26,7 @@ const projectsList = [
 
 export function ContainerProjects() {
   return (
-    <div className="mt-12 grid grid-cols-3 gap-5 w-full">
+    <div className="mt-12 flex flex-col items-center justify-center gap-10 lg:grid lg:grid-cols-3 lg:gap-5 w-full">
       {projectsList.map((project) => (
         <CardProject
           key={project.title}

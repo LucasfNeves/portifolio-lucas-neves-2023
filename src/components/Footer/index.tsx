@@ -8,7 +8,7 @@ export function Footer() {
   }
 
   return (
-    <footer className="flex justify-between px-40 items-center absolute bottom-0 w-full h-16 bg-gray-800 text-white">
+    <footer className="flex justify-between px-6 lg:px-40 items-center absolute bottom-0 w-screen lg:w-full h-16 bg-gray-800 text-white">
       <span className="font-roboto font-normal text-zinc-400">
         Lucas Farias das Neves <span className="text-xs">©</span> 2023
       </span>

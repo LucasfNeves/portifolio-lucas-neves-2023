@@ -26,6 +26,9 @@ export default function Home() {
       </Section>
 
       <Section id="contacts">
+        <h3 className="font-contrail_one mb-2 w-full text-start text-cyan-400">
+          Contatos
+        </h3>
         <Contacts />
       </Section>
     </>

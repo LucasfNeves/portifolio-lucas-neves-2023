@@ -8,12 +8,9 @@ import { Footer } from './Footer'
 export function Contacts() {
   return (
     <>
-      <h3 className="font-contrail_one w-full text-start text-cyan-400">
-        Contatos
-      </h3>
-      <div className="relative h-[19.375rem] w-full rounded-2xl border-2 border-cyan-400 ">
-        <div className="flex justify-center flex-col gap-4 items-start py-10 px-16">
-          <h2 className="font-contrail_one text-cyan-400 text-3xl">
+      <div className="relative mb-20 lg:mb-0 h-full lg:h-[19.375rem] w-full rounded-2xl border-2 border-cyan-400 ">
+        <div className="flex justify-center py-6 flex-col gap-4 items-center lg:items-start lg:py-10 px-16 w-full ">
+          <h2 className="font-contrail_one text-cyan-400 text-xl lg:text-3xl">
             VAMOS CONSTRUIR ALGO JUNTOS ?
           </h2>
           <Paragraph>

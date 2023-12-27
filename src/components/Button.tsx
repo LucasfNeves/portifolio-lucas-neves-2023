@@ -22,7 +22,7 @@ const ButtonVariants = tv({
       },
       Curriculum: {
         container:
-          'button rounded-md bg-cyan-400 px-3 py-3 text-zinc-800 hover:bg-cyan-300 mt-4',
+          'button rounded-md bg-cyan-400 px-3 py-3 text-zinc-800 hover:bg-cyan-300 mt-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300',
       },
       iconV: ' text-gray-800',
     },

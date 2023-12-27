@@ -27,27 +27,27 @@ interface NavMenuProviderProps {
   children: ReactNode
 }
 
+const menuOptions = [
+  {
+    text: 'Sobre',
+    id: 'about',
+  },
+  {
+    text: 'Tecnologias',
+    id: 'techs',
+  },
+  {
+    text: 'Projetos',
+    id: 'projects',
+  },
+  {
+    text: 'Contatos',
+    id: 'contacts',
+  },
+]
+
 export function NavMenuProvider({ children }: NavMenuProviderProps) {
   const [activeId, setActiveId] = useState<string | null>('about')
-
-  const menuOptions = [
-    {
-      text: 'Sobre',
-      id: 'about',
-    },
-    {
-      text: 'Tecnologias',
-      id: 'techs',
-    },
-    {
-      text: 'Projetos',
-      id: 'projects',
-    },
-    {
-      text: 'Contatos',
-      id: 'contacts',
-    },
-  ]
 
   function handleNavOptions(itemId: string) {
     setActiveId(itemId)
