@@ -16,6 +16,8 @@ interface NavMenuContextProps {
     id: string
   }[]
   activeId: string | null
+  open: boolean
+  setOpen: (open: boolean) => void
   handleNavOptions: (itemId: string) => void
 }
 
@@ -48,9 +50,11 @@ const menuOptions = [
 
 export function NavMenuProvider({ children }: NavMenuProviderProps) {
   const [activeId, setActiveId] = useState<string | null>('about')
+  const [open, setOpen] = useState(false)
 
-  function handleNavOptions(itemId: string) {
+  function handleNavOptions(itemId: string | null) {
     setActiveId(itemId)
+    setOpen(false)
   }
 
   useEffect(() => {
@@ -66,6 +70,8 @@ export function NavMenuProvider({ children }: NavMenuProviderProps) {
         handleNavOptions,
         menuOptions,
         activeId,
+        open,
+        setOpen,
       }}
     >
       {children}

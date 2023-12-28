@@ -8,7 +8,7 @@ export function NavBar() {
 
   return (
     <nav>
-      <ul className="flex gap-5">
+      <ul className="flex flex-col lg:flex-row lg:gap-5">
         {menuOptions.map((option) => (
           <NavOptions
             key={option.id}
