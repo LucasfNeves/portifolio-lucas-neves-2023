@@ -10,6 +10,8 @@ import {
   useState,
 } from 'react'
 
+import menuOptions from '@/data/menuItems'
+
 interface NavMenuContextProps {
   menuOptions: {
     text: string
@@ -28,25 +30,6 @@ export const NavMenuContext = createContext<NavMenuContextProps>(
 interface NavMenuProviderProps {
   children: ReactNode
 }
-
-const menuOptions = [
-  {
-    text: 'Sobre',
-    id: 'about',
-  },
-  {
-    text: 'Tecnologias',
-    id: 'techs',
-  },
-  {
-    text: 'Projetos',
-    id: 'projects',
-  },
-  {
-    text: 'Contatos',
-    id: 'contacts',
-  },
-]
 
 export function NavMenuProvider({ children }: NavMenuProviderProps) {
   const [activeId, setActiveId] = useState<string | null>('about')

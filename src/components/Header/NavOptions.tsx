@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Link as ScrollLink } from 'react-scroll'
 import { useNavMenu } from '@/context/NavMenu'
+import { useIsMobile } from '@/hooks/UseInMobile'
 
 interface NavOptionsProps {
   text: string
@@ -12,6 +13,7 @@ interface NavOptionsProps {
 
 export function NavOptions({ text, activeItem, id }: NavOptionsProps) {
   const { activeId, handleNavOptions } = useNavMenu()
+  const isMobile = useIsMobile()
 
   const activeStyle = {
     color: '#00bcd4',
@@ -35,7 +37,7 @@ export function NavOptions({ text, activeItem, id }: NavOptionsProps) {
       >
         {text}
 
-        {activeId === id && (
+        {activeId === id && !isMobile && (
           <motion.div
             layoutId="activeTab"
             className="absolute -bottom-px left-0 right-0 h-0.5 rounded-sm bg-cyan-400"

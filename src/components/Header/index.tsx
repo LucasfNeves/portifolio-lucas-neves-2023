@@ -2,16 +2,16 @@
 
 import Image from 'next/image'
 import logo from './../../assets/logo.svg'
-import { Sun } from 'phosphor-react'
-import { NavBar } from './NavBar'
-import { ButtonSmall } from '../ButtonSmall'
 import * as Collapsible from '@radix-ui/react-collapsible'
-import { Menu } from 'lucide-react'
-import { X } from '@phosphor-icons/react'
 import { useNavMenu } from '@/context/NavMenu'
+import { useIsMobile } from '@/hooks/UseInMobile'
+import { MenuToggle } from './MenuToggle'
+import { MenuDesktop } from './MenuDesktop'
+import { ButtonMenu } from '../ButtonMenu'
 
 export function Header() {
   const { open, setOpen } = useNavMenu()
+  const isMobile = useIsMobile()
 
   return (
     <Collapsible.Root
@@ -25,31 +25,26 @@ export function Header() {
         </figure>
 
         <Collapsible.Trigger asChild className="lg:hidden">
-          <button className="z-30">
-            {!open ? (
-              <Menu className="h-7 w-7 text-zinc-300 font-bold" />
-            ) : (
-              <X className="h-6 w-6 text-zinc-300" weight="bold" />
-            )}
-          </button>
+          <ButtonMenu title={!open ? 'Abrir menu' : 'Fechar menu'} />
         </Collapsible.Trigger>
       </div>
 
-      <Collapsible.Content
-        forceMount
-        className="flex absolute lg:relative lg:top-0 top-16 lg:right-0 right-6 z-20  data-[state=closed]:hidden lg:data-[state=closed]:flex transition-all duration-500 ease-in-out lg:w-full"
-      >
-        <div className="flex flex-col lg:bg-inherit bg-gray-800 lg:opacity-100 bg-opacity-95 rounded-md lg:p-0 p-8 lg:shadow-none shadow-[0_2px_10px] shadow-blackA4 lg:items-center  lg:justify-between lg:flex-row lg:flex-1 ">
-          <div></div>
-          <NavBar />
-          <ButtonSmall
-            icons={<Sun weight="bold" />}
-            variant="bold"
-            linkSocial={''}
-            title="Mudar tema: funcionalidade em desenvolvimento, aguarde! Indisponível no momento. :)"
-          />
-        </div>
-      </Collapsible.Content>
+      {!isMobile && (
+        <Collapsible.Content
+          forceMount
+          className="flex lg:relative lg:data-[state=closed]:flex transition-all duration-500 ease-in-out lg:w-full"
+        >
+          <MenuDesktop />
+        </Collapsible.Content>
+      )}
+      {isMobile && (
+        <Collapsible.Content
+          forceMount
+          className="flex absolute top-16 right-6 z-20 data-[state=closed]:hidden transition-all duration-500 ease-in-out lg:w-full animate-slideDownAndFade"
+        >
+          <MenuToggle />
+        </Collapsible.Content>
+      )}
     </Collapsible.Root>
   )
 }
