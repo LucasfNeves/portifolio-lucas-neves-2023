@@ -29,22 +29,12 @@ export function Header() {
         </Collapsible.Trigger>
       </div>
 
-      {!isMobile && (
-        <Collapsible.Content
-          forceMount
-          className="flex lg:relative lg:data-[state=closed]:flex transition-all duration-500 ease-in-out lg:w-full"
-        >
-          <MenuDesktop />
-        </Collapsible.Content>
-      )}
-      {isMobile && (
-        <Collapsible.Content
-          forceMount
-          className="flex absolute top-16 right-6 z-20 data-[state=closed]:hidden transition-all duration-500 ease-in-out lg:w-full animate-slideDownAndFade"
-        >
-          <MenuToggle />
-        </Collapsible.Content>
-      )}
+      <Collapsible.Content
+        forceMount
+        className="flex absolute lg:relative top-16 right-6 z-20 lg:top-0 lg:right-0 lg:z-0 data-[state=closed]:hidden lg:data-[state=closed]:flex lg:w-full lg:animate-none animate-slideDownAndFade"
+      >
+        {isMobile ? <MenuToggle /> : <MenuDesktop />}
+      </Collapsible.Content>
     </Collapsible.Root>
   )
 }
