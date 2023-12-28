@@ -31,7 +31,7 @@ export function Header() {
 
       <Collapsible.Content
         forceMount
-        className="flex absolute lg:relative top-16 right-6 z-20 lg:top-0 lg:right-0 lg:z-0 data-[state=closed]:hidden lg:data-[state=closed]:flex lg:w-full lg:animate-none animate-slideDownAndFade"
+        className="flex absolute lg:relative top-16 right-6 z-20 lg:top-0 lg:right-0 lg:z-0 data-[state=closed]:hidden lg:data-[state=closed]:flex lg:w-full lg:animate-none      animate-slideDownAndFade"
       >
         {isMobile ? <MenuToggle /> : <MenuDesktop />}
       </Collapsible.Content>

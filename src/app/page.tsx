@@ -3,10 +3,13 @@ import { About } from '@/components/About'
 import { Technologies } from '@/components/Technologies'
 import { Contacts } from '@/components/Contacts'
 import { Projects } from '@/components/Projects'
+import { Header } from '@/components/Header'
 
 export default function Home() {
   return (
     <>
+      <Header />
+
       <Section id="about">
         <About />
       </Section>
