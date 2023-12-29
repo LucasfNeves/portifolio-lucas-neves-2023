@@ -13,7 +13,7 @@ const projectsList = [
   {
     title: 'To-do List',
     date: 'Set - 2023',
-    description: 'Registre suas tarefas !',
+    description: 'Checklist para registrar suas tarefas do dia a dia',
     image: ImageToDoList,
     id: 'To_do_List',
   },
