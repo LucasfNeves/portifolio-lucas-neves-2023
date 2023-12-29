@@ -5,7 +5,7 @@ import { About } from '@/components/About'
 import { Technologies } from '@/components/Technologies'
 import { Contacts } from '@/components/Contacts'
 import { Header } from '@/components/Header'
-import projectsList from '@/data/projects'
+import projectsList from '../data/projects'
 import { ContainerProjects } from '@/components/Projects'
 
 export default function Home() {

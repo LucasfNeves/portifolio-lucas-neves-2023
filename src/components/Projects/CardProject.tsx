@@ -39,7 +39,11 @@ export function CardProject({
       </div>
 
       <div className="w-full absolute top-[50%] bottom-[50%] left-0 right-0 flex justify-center items-center opacity-0 translate-y-36 transition-all duration-200 ease-in-out group-hover:translate-y-0 group-hover:opacity-100 ">
-        <Button link={id} variant="CardProject" title="Ver mais" />
+        <Button
+          link={`projetos/${id}`}
+          variant="CardProject"
+          title="Ver mais"
+        />
       </div>
     </article>
   )

@@ -1,5 +1,5 @@
-import { GithubLogo, LinkedinLogo } from 'phosphor-react'
 import { ButtonSmall } from '../ButtonSmall'
+import { GithubLogo, LinkedinLogo } from '@phosphor-icons/react'
 
 export function SocialMedia() {
   return (
