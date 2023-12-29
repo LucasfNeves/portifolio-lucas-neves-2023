@@ -1,11 +1,32 @@
 'use client'
 
 import { NavOptions } from './NavOptions'
-import { useNavMenu } from '@/context/NavMenu'
 
-export function NavBar() {
-  const { handleNavOptions, menuOptions } = useNavMenu()
+const menuOptions = [
+  {
+    text: 'Sobre',
+    id: 'about',
+  },
+  {
+    text: 'Tecnologias',
+    id: 'techs',
+  },
+  {
+    text: 'Projetos',
+    id: 'projects',
+  },
+  {
+    text: 'Contatos',
+    id: 'contacts',
+  },
+]
 
+interface NavBarProps {
+  handleNavOptions: (itemId: string) => void
+  activeId: string | null
+}
+
+export function NavBar({ handleNavOptions, activeId }: NavBarProps) {
   return (
     <nav>
       <ul className="flex flex-col lg:flex-row lg:gap-5">
@@ -13,8 +34,9 @@ export function NavBar() {
           <NavOptions
             key={option.id}
             text={option.text}
-            activeItem={() => handleNavOptions(option.id)}
             id={option.id}
+            handleNavOptions={handleNavOptions}
+            activeId={activeId}
           />
         ))}
       </ul>

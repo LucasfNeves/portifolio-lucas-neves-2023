@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion'
-import { useNavMenu } from '@/context/NavMenu'
 import { ComponentProps } from 'react'
 import { Menu, X } from 'lucide-react'
 
 export type ButtonMenuProps = ComponentProps<'button'> & {
   title?: string
+  open: boolean | undefined
+  setOpen: (open: boolean) => void
 }
 
 const animationVariants = {
@@ -12,9 +13,7 @@ const animationVariants = {
   closed: { rotate: 180 },
 }
 
-export function ButtonMenu({ ...props }: ButtonMenuProps) {
-  const { open, setOpen } = useNavMenu()
-
+export function ButtonMenu({ open, setOpen, ...props }: ButtonMenuProps) {
   const toggleOpen = () => setOpen(!open)
 
   return (

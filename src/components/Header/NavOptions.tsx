@@ -2,17 +2,21 @@
 
 import { motion } from 'framer-motion'
 import { Link as ScrollLink } from 'react-scroll'
-import { useNavMenu } from '@/context/NavMenu'
 import { useIsMobile } from '@/hooks/UseInMobile'
 
 interface NavOptionsProps {
   text: string
-  activeItem: () => void
+  handleNavOptions: (itemId: string) => void
   id: string
+  activeId: string | null
 }
 
-export function NavOptions({ text, activeItem, id }: NavOptionsProps) {
-  const { activeId, handleNavOptions } = useNavMenu()
+export function NavOptions({
+  text,
+  id,
+  handleNavOptions,
+  activeId,
+}: NavOptionsProps) {
   const isMobile = useIsMobile()
 
   const activeStyle = {
@@ -31,7 +35,7 @@ export function NavOptions({ text, activeItem, id }: NavOptionsProps) {
     >
       <li
         key={id}
-        onClick={activeItem}
+        onClick={() => handleNavOptions(id)}
         className={`relative px-4 py-2 cursor-pointer font-roboto text-sm text-zinc-400 hover:text-zinc-300 transition duration-300 ease-in-out`}
         style={activeId === id ? activeStyle : { color: '#d1d5db' }}
       >
