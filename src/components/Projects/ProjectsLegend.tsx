@@ -1,5 +1,3 @@
-'use client'
-
 export function ProjectsLegend() {
   return (
     <p className="w-full font-robot text-start text-base text-zinc-300">

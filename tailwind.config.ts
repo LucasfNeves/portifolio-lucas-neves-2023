@@ -12,6 +12,9 @@ const config: Config = {
         roboto: 'var(--font-roboto)',
         contrail_one: 'var(--font-contrail-one)',
       },
+      gridTemplateColumns: {
+        detailsProject: 'minmax(0, 1fr) 384px',
+      },
       keyframes: {
         slideDownAndFade: {
           '0%': {

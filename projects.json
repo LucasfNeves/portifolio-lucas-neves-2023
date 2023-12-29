@@ -1,0 +1,25 @@
+{
+    "projects": [
+        {
+            "title": "Delivery Burguer 1",
+            "date": "Nov - 2023",
+            "description": "Plataforma para pedidos de hambúrguer",
+            "image": "ImageDeliveryBurguer",
+            "id": "Delivery Burguer 1"
+        },
+        {
+            "title": "Delivery Burguer 2",
+            "date": "Nov - 2023",
+            "description": "Plataforma para pedidos de hambúrguer",
+            "image": "ImageDeliveryBurguer",
+            "id": "Delivery Burguer 2"
+        },
+        {
+            "title": "Delivery Burguer 3",
+            "date": "Nov - 2023",
+            "description": "Plataforma para pedidos de hambúrguer",
+            "image": "ImageDeliveryBurguer",
+            "id": "Delivery Burguer 3"
+        }
+    ]
+}

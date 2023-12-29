@@ -1,15 +1,18 @@
+'use client'
+
 import { Section } from '@/components/Section'
 import { About } from '@/components/About'
 import { Technologies } from '@/components/Technologies'
 import { Contacts } from '@/components/Contacts'
-import { Projects } from '@/components/Projects'
 import { Header } from '@/components/Header'
+import projectsList from '@/data/projects'
+import { ContainerProjects } from '@/components/Projects'
 
 export default function Home() {
+  const cards = projectsList
   return (
     <>
       <Header />
-
       <Section id="about">
         <About />
       </Section>
@@ -25,7 +28,7 @@ export default function Home() {
         <h3 className="font-contrail_one mb-2 w-full text-start text-cyan-400">
           Projetos
         </h3>
-        <Projects />
+        <ContainerProjects cards={cards} />
       </Section>
 
       <Section id="contacts">

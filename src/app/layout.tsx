@@ -2,7 +2,6 @@
 import type { Metadata } from 'next'
 import { Roboto, Contrail_One } from 'next/font/google'
 import './globals.css'
-import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { NavMenuProvider } from '@/context/NavMenu'
 

@@ -1,11 +1,29 @@
-import { ContainerProjects } from './ContainerProjects'
+'use client'
+
+import { CardProject, CardProps } from './CardProject'
+
 import { ProjectsLegend } from './ProjectsLegend'
 
-export function Projects() {
+interface ContainerProjectsProps {
+  cards: CardProps[]
+}
+
+export function ContainerProjects({ cards }: ContainerProjectsProps) {
   return (
     <>
       <ProjectsLegend />
-      <ContainerProjects />
+      <div className="mt-12 flex flex-col items-center justify-center gap-10 lg:grid lg:grid-cols-3 lg:gap-5 w-full">
+        {cards.map((project) => (
+          <CardProject
+            id={project.id}
+            key={project.id}
+            title={project.title}
+            date={project.date}
+            description={project.description}
+            image={project.image}
+          />
+        ))}
+      </div>
     </>
   )
 }

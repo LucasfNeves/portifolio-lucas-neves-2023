@@ -36,17 +36,19 @@ export interface ButtonSmallProps
   icons: ReactNode
   title?: string
   linkSocial: Url
+  target?: string
 }
 
 export function ButtonSmall({
   icons,
   variant,
   linkSocial,
+  target,
   ...props
 }: ButtonSmallProps) {
   const { container, icon } = ButtonSmallVariants({ variant })
   return (
-    <Link target="_blank" href={linkSocial}>
+    <Link target={target} href={linkSocial}>
       <button className={container()} {...props}>
         <div
           className={`flex h-full w-full items-center justify-center${icon()}`}
