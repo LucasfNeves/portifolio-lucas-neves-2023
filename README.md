@@ -38,6 +38,6 @@ O portfólio inclui uma navegação intuitiva:
 **Contato** : Fornece acesso ao WhatsApp, email e redes sociais. No footer, um botão leva de volta ao topo da página.
 
 Contato
-Email: [](lucasfarias.ln@gmail.com)
+Email: (lucasfarias.ln@gmail.com)
 
 
