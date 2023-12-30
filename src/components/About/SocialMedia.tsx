@@ -1,3 +1,5 @@
+'use client'
+
 import { ButtonSmall } from '../ButtonSmall'
 import { GithubLogo, LinkedinLogo } from '@phosphor-icons/react'
 

@@ -2,7 +2,7 @@ import imageDeliveryBurguerDetails from './../assets/detailsImagesProjects/deliv
 import imageToDoListDetails from './../assets/detailsImagesProjects/to-do-list.svg'
 import imageTailwindUIDetails from './../assets/detailsImagesProjects/tailwind-next-ui.svg'
 
-export const projectDetailsList = [
+const projectDetailsList = [
   {
     image: imageDeliveryBurguerDetails,
     title: 'Delivery Burguer',
@@ -10,11 +10,11 @@ export const projectDetailsList = [
     my_role: 'Front-end',
     team: 'Lucas Farias Neves',
     about:
-      'O Burger Delivery é um site fictício dedicado à entrega de hambúrgueres, proporcionando aos clientes uma experiência prática e saborosa. O projeto é estruturado em três páginas principais, menu, carrinho e página de conclusão, para facilitar a navegação e a conclusão de pedidos.',
+      'O Burger Delivery é um projeto fictício dedicado à entrega de hambúrgueres, proporcionando aos clientes uma experiência prática e saborosa. A estrutura do site compreende três páginas principais – menu, carrinho e página de conclusão – para facilitar a navegação e conclusão de pedidos de forma intuitiva.',
     tecnologies:
       'JavaScript, CSS, React.JS, TypeScript, Vite, Styled Components, Flexbox e CSS Grid, Immer, React Hook Form, Local Storage, useContext e outros hooks do React,  ',
     notes:
-      'O projeto foi desenvolvido para aprofundar os estudos de React, TypeScript, JavaScript e estilização, abordando conceitos como Componentização, Propriedades, Estados, Imutabilidade, Hooks do React, uso de bibliotecas externas e conexão com API. Posteriormente, foi modificado para utilizar o LocalStorage em vez de API, pois é um projeto fictício para treinamento, sem cobranças ou solicitamento de dados sensíveis, armazenando dados é feito localmente no navegador do usuário.',
+      'O Burger Delivery foi concebido como um exercício para aprofundar meus conhecimentos em React, TypeScript, JavaScript e estilização. Durante o desenvolvimento, foram aplicados conceitos cruciais, como componentização, propriedades, estados, imutabilidade, uso de hooks do React e integração com bibliotecas externas. Inicialmente, o projeto estava configurado para interagir com uma API, mas posteriormente foi adaptado para utilizar o LocalStorage, uma abordagem mais adequada para um projeto fictício de treinamento. O armazenamento de dados é feito localmente no navegador do usuário, eliminando a necessidade de cobranças ou solicitação de dados sensíveis.',
     id: 'Delivery_Burguer',
     linkGit: 'https://github.com/LucasfNeves/Delivery-Burguer',
     linkDeploy: 'https://delivery-burguer.vercel.app/',
@@ -26,29 +26,31 @@ export const projectDetailsList = [
     my_role: 'Front-end',
     team: 'Lucas Farias Neves',
     about:
-      'Este projeto é uma aplicação de lista de tarefas que permite aos usuários adicionar, marcar como concluídas e excluir tarefas.',
+      'A To-do List é uma aplicação de lista de tarefas, oferecendo aos usuários a capacidade de adicionar, marcar como concluídas e excluir tarefas de forma intuitiva.',
     tecnologies:
       'JavaScript, CSS, React.JS, TypeScript, Vite, Flexbox e CSS Grid, React Hook Form, Local Storage e hooks do React,  ',
     notes:
-      'O projeto foi desenvolvido para aprofundar os estudos de React, TypeScript, JavaScript e estilização, abordando conceitos como Componentização, Propriedades, Estados, Imutabilidade, Hooks do React e persistir dados no Local Storage.',
+      'A criação deste projeto teve como objetivo aprofundar meus estudos em React, TypeScript, JavaScript e estilização. Durante o desenvolvimento, explorei conceitos essenciais, como Componentização, Propriedades, Estados, Imutabilidade e a implementação de Hooks do React. Destaquei a persistência de dados no Local Storage como parte fundamental da experiência do usuário, tornando a aplicação prática e eficiente para o gerenciamento de tarefas diárias.',
     id: 'To_do_List',
     linkGit: 'https://github.com/LucasfNeves/Todo-list-reactjs',
     linkDeploy: 'https://todo-list-reactjs-tau.vercel.app/',
   },
   {
     image: imageTailwindUIDetails,
-    title: 'Delivery Burguer',
+    title: 'Next - Tailwind UI',
     date: 'Nov - 2023',
     my_role: 'Front-end',
     team: 'Lucas Farias Neves',
     about:
-      'Essa página foi desenvolvida para estudar a biblioteca de estilização Tailwind CSS, que utiliza a abordagem de classes de utilitários (utility classes) que aplica o CSS no HTML.',
+      'Essa página foi desenvolvida com o propósito de estudar a biblioteca de estilização Tailwind CSS, que adota a abordagem de classes de utilitários (utility classes) para aplicar o CSS diretamente no HTML.',
     tecnologies:
       'JavaScript, CSS, React.JS, TypeScript, Next, Tailwind CSS, Radiix, Memo.   ',
     notes:
-      'Conceitos abordados: Configurações do Tailwind CSS utilizando o NextJS, Fundamentos do Tailwind CSS, Desenvolvimento mobile first, Seletores e estados, Responsividade e Breakpoints, Valores arbitrários e extensões de propriedades CSS, Variantes e Variantes com slots, Animações, Estilização com Tailwind CSS, Dark Mode, Variáveis de ambiente, Componentes com Tailwind CSS, Componentes com Tailwind CSS e Radiix,   ',
+      'Conceitos essenciais foram abordados durante o projeto, incluindo configurações do Tailwind CSS utilizando o NextJS, fundamentos do Tailwind CSS, desenvolvimento mobile-first, seletores e estados, responsividade e breakpoints, valores arbitrários e extensões de propriedades CSS, variantes e variantes com slots, animações, estilização com Tailwind CSS, Dark Mode, variáveis de ambiente, e a integração de componentes usando Tailwind CSS e Radiix. O projeto proporcionou uma compreensão aprofundada e prática desses conceitos, contribuindo para a expansão do conhecimento em design responsivo e eficaz.',
     id: 'Next_Tailwind_UI',
     linkGit: 'https://github.com/LucasfNeves/settings-page-tailwind-next',
     linkDeploy: 'https://settings-page-tailwind-next.vercel.app/',
   },
 ]
+
+export default projectDetailsList

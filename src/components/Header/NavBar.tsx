@@ -1,5 +1,3 @@
-'use client'
-
 import { NavOptions } from './NavOptions'
 
 const menuOptions = [

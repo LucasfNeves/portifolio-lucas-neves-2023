@@ -3,26 +3,25 @@ import { SubTitle } from '../SubTitle'
 
 export function Describe() {
   return (
-    <>
+    <div className="flex flex-col gap-2">
       <SubTitle>Minhas principais habilidades</SubTitle>
       <Paragraph>
-        Ao longo da minha trajetória como desenvolvedor web, as principais
-        tecnologias que eu possuo conhecimento são o{' '}
+        Ao longo da minha jornada como desenvolvedor web, adquiri proficiência
+        em diversas tecnologias-chave. Possuo sólidos fundamentos em{' '}
         <strong className="font-bold text-cyan-400">
-          JavaScript,TypeScript, ReactJS e NextJS, além das bases essenciais de
-          HTML5, CSS3, Tailwind CSS e Styled Components
-        </strong>
-        . Além disso, utilizo o{' '}
-        <strong className="font-bold text-cyan-400">Figma</strong> para
-        aprimorar a experiência do usuário, integrando design e desenvolvimento
-        de maneira sinérgica.
+          JavaScript, HTML5, CSS3, TypeScript, ReactJS e NextJS, TailwindCSS,
+          Styled-Components, Git e GitHub
+        </strong>{' '}
+        . Utilizo o <strong className="font-bold text-cyan-400">Figma</strong>{' '}
+        para aprimorar a experiência do usuário, integrando design e
+        desenvolvimento de maneira sinérgica.
       </Paragraph>
       <Paragraph>
-        Vejo a área da tecnologia como uma oportunidade de constante evolução e
-        aprendizado, por isso sempre estou buscando novos conhecimentos para
-        impulsionar meu desenvolvimento profissional e me aperfeiçoar nos
-        conhecimentos que já possuo
+        Encaro a área da tecnologia como uma oportunidade constante de evolução.
+        Estou continuamente em busca de novos conhecimentos para impulsionar meu
+        desenvolvimento profissional e aprimorar ainda mais as habilidades que
+        já possuo.
       </Paragraph>
-    </>
+    </div>
   )
 }

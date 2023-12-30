@@ -1,5 +1,3 @@
-'use client'
-
 import { Section } from '@/components/Section'
 import { About } from '@/components/About'
 import { Technologies } from '@/components/Technologies'

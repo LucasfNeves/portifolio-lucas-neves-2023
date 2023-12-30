@@ -1,5 +1,3 @@
-'use client'
-
 import Image from 'next/image'
 import Profile from '../../assets/profile-lucas.png'
 import { Paragraph } from '../Paragraph'
@@ -25,12 +23,16 @@ export function About() {
           </span>
         </h1>
         <Paragraph>
-          Sou programador Front-end e minha jornada na programação começa no
-          final de 2022, quando ingressei na Universidade Presbiteriana
-          Mackenzie na graduação de Ánalise e Desenvolvimento de Sistemas, desde
-          então venho me dedicado grandimente em estudos através de cursos,
-          pesquisas, leituras e gosto de construir projetos pessoais para
-          aprender praticando.
+          Como programador Front-end, minha jornada começou em 2022, ao entrar
+          na Universidade Presbiteriana Mackenzie para estudar Análise e
+          Desenvolvimento de Sistemas. Desde então, tenho dedicado meu tempo a
+          estudos por meio de cursos, pesquisas e leituras, reforçando meu
+          compromisso com o aprendizado contínuo. Minha paixão por aplicar
+          conhecimentos na prática se reflete em projetos pessoais que
+          constantemente aprimoram minhas habilidades. Sou um profissional
+          comprometido, focado no crescimento e estou ansioso por uma
+          oportunidade que me permita contribuir e expandir minhas capacidades
+          no desenvolvimento Front-end.
         </Paragraph>
         <SocialMedia />
       </div>

@@ -1,5 +1,3 @@
-'use client'
-
 import { motion } from 'framer-motion'
 import { Link as ScrollLink } from 'react-scroll'
 import { useIsMobile } from '@/hooks/UseInMobile'

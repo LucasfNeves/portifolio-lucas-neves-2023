@@ -1,5 +1,3 @@
-'use cleint'
-
 import { Envelope, GithubLogo, LinkedinLogo } from '@phosphor-icons/react'
 import { ButtonSmall } from '../ButtonSmall'
 
