@@ -2,6 +2,9 @@
 # Portfólio de Lucas Farias das Neves - Desenvolvedor Frontend 2023
 Bem-vindo ao meu portfólio! 👋 Sou Lucas Farias das Neves, um apaixonado Desenvolvedor Frontend, e este espaço é dedicado a compartilhar mais sobre minha jornada profissional, habilidades técnicas e projetos destacados.
 
+![image](https://github.com/LucasfNeves/portifolio-lucas-neves-2023/assets/136910031/a7284c9b-b62e-46e0-a800-365bba0ba871)
+
+
 ## Acesso ao meu portifólio :
 [Acesso o projeto !](https://portifolio-lucas-01.vercel.app/)
 
