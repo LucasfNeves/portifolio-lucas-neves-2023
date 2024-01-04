@@ -16,21 +16,21 @@ export default function Home() {
       </Section>
 
       <Section id="techs">
-        <h3 className="font-contrail_one mb-2 w-full text-start text-cyan-400">
+        <h3 className="mb-2 w-full text-start font-contrail_one text-cyan-400">
           Tecnologias
         </h3>
         <Technologies />
       </Section>
 
       <Section id="projects">
-        <h3 className="font-contrail_one mb-2 w-full text-start text-cyan-400">
+        <h3 className="mb-2 w-full text-start font-contrail_one text-cyan-400">
           Projetos
         </h3>
         <ContainerProjects cards={cards} />
       </Section>
 
       <Section id="contacts">
-        <h3 className="font-contrail_one mb-2 w-full text-start text-cyan-400">
+        <h3 className="mb-2 w-full text-start font-contrail_one text-cyan-400">
           Contatos
         </h3>
         <Contacts />

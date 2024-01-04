@@ -46,17 +46,17 @@ export default function DetailsProjectPage(props: DetailsProjectPageProps) {
   } = projectDetails || ({} as projectDetailsList)
 
   return (
-    <div className="flex flex-col min-h-screen py-4 px-6 gap-4 mb-24 lg:mb-0 lg:pb-16 lg:pt-10 lg:gap-6">
+    <div className="mb-24 flex min-h-screen flex-col gap-4 px-6 py-4 lg:mb-0 lg:gap-6 lg:pb-16 lg:pt-10">
       <ButtonSmall
         title="Voltar para Home"
         linkSocial={'/'}
         variant="bold"
         icons={<ArrowLeft className="h-7 w-7" />}
       />
-      <div className="flex flex-col gap-4 lg:min-h-screen lg:grid lg:gap-6 lg:grid-cols-detailsProject">
-        <main className="bg-gray-800 min-h-[938px] flex flex-col rounded-2xl">
+      <div className="flex flex-col gap-4 lg:grid lg:min-h-screen lg:grid-cols-detailsProject lg:gap-6">
+        <main className="flex min-h-[938px] flex-col rounded-2xl bg-gray-800">
           <Image
-            className="w-full h-fit object-cover"
+            className="h-fit w-full object-cover"
             src={image}
             alt={title}
             width={1920}

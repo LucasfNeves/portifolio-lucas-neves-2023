@@ -8,19 +8,19 @@ export function Footer() {
   }
 
   return (
-    <footer className="flex justify-between px-6 lg:px-40 items-center absolute bottom-0 w-screen lg:w-full h-16 bg-gray-800 text-white">
+    <footer className="absolute bottom-0 flex h-16 w-screen items-center justify-between bg-gray-800 px-6 text-white lg:w-full lg:px-40">
       <span className="font-roboto font-normal text-zinc-400">
         Lucas Farias das Neves <span className="text-xs">©</span> 2023
       </span>
       <button
         type="button"
         onClick={handleScroll}
-        className="flex h-12 w-12 items-center justify-center rounded-md transition duration-300 ease-in-out hover:bg-gray-600 bg-gray-700"
+        className="flex h-12 w-12 items-center justify-center rounded-md bg-gray-700 transition duration-300 ease-in-out hover:bg-gray-600"
         title="Voltar ao topo"
       >
         <ArrowUp
           weight="bold"
-          className="h-6 w-6 flex items-center justify-center text-white"
+          className="flex h-6 w-6 items-center justify-center text-white"
         />
       </button>
     </footer>

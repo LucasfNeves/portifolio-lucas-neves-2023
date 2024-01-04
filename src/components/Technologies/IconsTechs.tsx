@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 export function IconsTechs() {
   return (
-    <div className="mb-6 flex gap-4 flex-wrap">
+    <div className="mb-6 flex flex-wrap gap-4">
       <Image src={CSS} alt={''} />
       <Image src={HTML} alt={''} />
       <Image src={JS} alt={''} />

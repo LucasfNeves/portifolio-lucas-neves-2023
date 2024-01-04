@@ -8,8 +8,8 @@ interface AcessProjectProps {
 
 export function AcessProject({ linkDeploy, linkGit }: AcessProjectProps) {
   return (
-    <aside className="bg-gray-800  h-[248px] lg:max-h-[248px] rounded-2xl w-full flex flex-col justify-center gap-4 items-stretch px-8">
-      <h2 className="font-roboto text-zinc-300 font-bold text-md  lg:text-xl text-center lg:mb-4">
+    <aside className="flex  h-[248px] w-full flex-col items-stretch justify-center gap-4 rounded-2xl bg-gray-800 px-8 lg:max-h-[248px]">
+      <h2 className="text-md text-center font-roboto font-bold  text-zinc-300 lg:mb-4 lg:text-xl">
         Links do projeto
       </h2>
       <Button

@@ -5,7 +5,7 @@ type SectionProps = ComponentProps<'section'>
 export function Section(props: SectionProps) {
   return (
     <section
-      className="flex px-6 h-full lg:h-screen flex-col items-center justify-center lg:py-20 py-10"
+      className="flex h-full flex-col items-center justify-center px-6 py-10 lg:h-screen lg:py-20"
       {...props}
     />
   )

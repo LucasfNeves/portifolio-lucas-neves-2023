@@ -22,7 +22,7 @@ export function ButtonMenu({ open, setOpen, ...props }: ButtonMenuProps) {
       {...props}
       onClick={toggleOpen}
     >
-      <div className="text-white font-bold">
+      <div className="font-bold text-white">
         <motion.div initial="closed" animate={open ? 'open' : 'closed'}>
           <motion.div variants={animationVariants}>
             {!open ? <Menu className="h-7 w-7" /> : <X className="h-6 w-6" />}

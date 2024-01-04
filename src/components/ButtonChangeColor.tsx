@@ -13,7 +13,7 @@ export function ButtonChangeColor({ icons, ...props }: ButtonChangeColorProps) {
       className="flex h-12 w-12 items-center justify-center rounded-md bg-gray-800 transition duration-300 ease-in-out hover:bg-gray-700 "
       {...props}
     >
-      <div className="flex items-center justify-center h-5 w-5  text-white">
+      <div className="flex h-5 w-5 items-center justify-center  text-white">
         {icons}
       </div>
     </button>

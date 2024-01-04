@@ -6,8 +6,8 @@ import { GithubLogo, LinkedinLogo } from '@phosphor-icons/react'
 export function SocialMedia() {
   return (
     <section>
-      <h2 className="font-contrail_one mt-8 text-2xl">Minhas redes sociais</h2>
-      <div className="flex items-center justify-center lg:justify-start gap-4 mt-4">
+      <h2 className="mt-8 font-contrail_one text-2xl">Minhas redes sociais</h2>
+      <div className="mt-4 flex items-center justify-center gap-4 lg:justify-start">
         <ButtonSmall
           target={'_blank'}
           title="GitHub"

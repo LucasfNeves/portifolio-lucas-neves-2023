@@ -3,7 +3,7 @@ import { ButtonSmall } from '../ButtonSmall'
 
 export function Footer() {
   return (
-    <footer className="flex gap-6 justify-center items-center lg:absolute lg:bottom-0 lg:right-0 w-full h-[5rem] border-t-2 border-cyan-400">
+    <footer className="flex h-[5rem] w-full items-center justify-center gap-6 border-t-2 border-cyan-400 lg:absolute lg:bottom-0 lg:right-0">
       <ButtonSmall
         target={'_blank'}
         variant="regular"

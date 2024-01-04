@@ -21,8 +21,8 @@ export function DescriptionDetails({
   title,
 }: DescriptionDetailsProps) {
   return (
-    <div className="px-8 py-6 flex flex-col gap-4">
-      <small className="text-gray-400 text-xs ">{date}</small>
+    <div className="flex flex-col gap-4 px-8 py-6">
+      <small className="text-xs text-gray-400 ">{date}</small>
       <SubTitle>{title}</SubTitle>
       <Paragraph>
         <strong className="text-cyan-400">Minha função : </strong>

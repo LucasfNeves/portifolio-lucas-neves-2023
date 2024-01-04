@@ -30,9 +30,9 @@ export function Header() {
     <Collapsible.Root
       open={open}
       onOpenChange={setOpen}
-      className="flex-col lg:flex-row sticky left-0 right-0 top-0 z-50 lg:mx-auto flex h-[5rem] w-full lg:max-w-[76rem] bg-neutral-900"
+      className="sticky left-0 right-0 top-0 z-50 flex h-[5rem] w-full flex-col bg-neutral-900 lg:mx-auto lg:max-w-[76rem] lg:flex-row"
     >
-      <div className="flex px-6 items-center justify-between h-full w-full lg:w-fit">
+      <div className="flex h-full w-full items-center justify-between px-6 lg:w-fit">
         <figure>
           <Image src={logo} alt="Logo" />
         </figure>
@@ -48,10 +48,10 @@ export function Header() {
 
       <Collapsible.Content
         forceMount
-        className="flex absolute lg:relative top-16 right-6 z-20 lg:top-0 lg:right-0 lg:z-0 data-[state=closed]:hidden lg:data-[state=closed]:flex lg:w-full lg:animate-none      animate-slideDownAndFade"
+        className="absolute right-6 top-16 z-20 flex animate-slideDownAndFade data-[state=closed]:hidden lg:relative lg:right-0 lg:top-0 lg:z-0 lg:w-full lg:animate-none      lg:data-[state=closed]:flex"
       >
         {isMobile ? (
-          <div className="flex flex-col items-center gap-4 bg-gray-800 bg-opacity-95 rounded-md p-8 shadow-[0_2px_10px] shadow-blackA4 ">
+          <div className="shadow-blackA4 flex flex-col items-center gap-4 rounded-md bg-gray-800 bg-opacity-95 p-8 shadow-[0_2px_10px] ">
             <NavBar activeId={activeId} handleNavOptions={handleNavOptions} />
             {/* <ButtonChangeColor
               icons={<Sun weight="bold" />}
@@ -59,7 +59,7 @@ export function Header() {
               /> */}
           </div>
         ) : (
-          <div className="flex  lg:justify-center lg:items-center lg:flex-row lg:flex-1 ">
+          <div className="flex  lg:flex-1 lg:flex-row lg:items-center lg:justify-center ">
             <NavBar activeId={activeId} handleNavOptions={handleNavOptions} />
             {/* <ButtonChangeColor
               icons={<Sun weight="bold" />}
