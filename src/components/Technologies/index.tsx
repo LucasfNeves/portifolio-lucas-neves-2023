@@ -26,7 +26,7 @@ export function Technologies() {
         <Button
           icon={<File weight="fill" className="h-5 w-5" />}
           title="Meu currículo"
-          link="https://drive.google.com/file/d/1QB8eYg3IPhKqs-lfZvddi2k_1CKeVJ3P/view"
+          link="https://drive.google.com/file/d/1lwAy25QiK9vfExXKbi1cFTA8lTMUg7--/view"
           variant="Curriculum"
           target="_blank"
         />
