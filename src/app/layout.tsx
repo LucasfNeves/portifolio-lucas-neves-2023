@@ -34,8 +34,8 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className="antialiased">
       <body className={`${roboto.variable} ${contrailOne.variable}`}>
-        <div className="relative flex flex-col w-full gap-5 justify-start bg-neutral-900 ">
-          <main className="w-screen h-fit gap-14 lg:gap-0 lg:mb-10 flex flex-col lg:mx-auto bg-neutral-900 lg:w-full lg:max-w-[76rem]">
+        <div className="relative flex w-full flex-col justify-start gap-5 bg-neutral-900 ">
+          <main className="flex h-fit w-screen flex-col gap-14 bg-neutral-900 lg:mx-auto lg:mb-10 lg:w-full lg:max-w-[76rem] lg:gap-0">
             {children}
           </main>
           <Footer />

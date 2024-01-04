@@ -5,7 +5,7 @@ import { SocialMedia } from './SocialMedia'
 
 export function About() {
   return (
-    <div className="flex flex-col justify-center w-full items-center gap-4 lg:grid lg:grid-cols-2">
+    <div className="flex w-full flex-col items-center justify-center gap-4 lg:grid lg:grid-cols-2">
       <div>
         <Image
           width={400}
@@ -15,10 +15,10 @@ export function About() {
           alt="foto perifl"
         />
       </div>
-      <div className="flex flex-col gap-4 items-center lg:items-start justify-center text-cyan-400">
-        <h1 className="font-contrail_one text-center lg:text-start text-2xl lg:text-5xl ">
+      <div className="flex flex-col items-center justify-center gap-4 text-cyan-400 lg:items-start">
+        <h1 className="text-center font-contrail_one text-2xl lg:text-start lg:text-5xl ">
           Olá, eu sou o Lucas <br />
-          <span className="font-roboto mb-4 text-xl lg:text-2xl text-white">
+          <span className="mb-4 font-roboto text-xl text-white lg:text-2xl">
             Desenvolvedor Front-end apaixonado por inovação.
           </span>
         </h1>
