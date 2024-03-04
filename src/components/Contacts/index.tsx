@@ -21,7 +21,7 @@ export function Contacts() {
             icon={<PaperPlaneRight weight="fill" className="h-6 w-6" />}
             variant="SectionContact"
             title="Enviar mensagem"
-            link="https://wa.me/5511913302042"
+            link="https://wa.me/5511991935673"
             target="_blank"
           />
         </div>
