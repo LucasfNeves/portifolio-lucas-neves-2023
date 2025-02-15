@@ -1,6 +1,6 @@
 import imageDeliveryBurguerDetails from './../assets/detailsImagesProjects/delivery-burguer.svg'
-import imageToDoListDetails from './../assets/detailsImagesProjects/to-do-list.svg'
 import imageMycashlyDetails from './../assets/detailsImagesProjects/mycashly.svg'
+import imageMycashlyApiDetails from './../assets/detailsImagesProjects/mycashly-api.svg'
 
 const projectDetailsList = [
   {
@@ -20,20 +20,20 @@ const projectDetailsList = [
     linkDeploy: 'https://delivery-burguer.vercel.app/',
   },
   {
-    image: imageToDoListDetails,
-    title: 'To-do List',
-    date: 'set - 2023',
-    my_role: 'Front-end',
+    image: imageMycashlyApiDetails,
+    title: 'MyCashly - Backend (API)',
+    date: 'Dez - 2024',
+    my_role: 'Full-stack',
     team: 'Lucas Farias Neves',
     about:
-      'A To-do List é uma aplicação de lista de tarefas, oferecendo aos usuários a capacidade de adicionar, marcar como concluídas e excluir tarefas de forma intuitiva.',
+      'O MyCashly é um aplicativo de controle financeiro pessoal, projetado para ajudar os usuários a gerenciar suas finanças de forma eficaz e prática. A aplicação oferece uma visão geral das despesas, receitas e investimentos, permitindo que os usuários adicionem, editem e excluam transações, categorizem despesas e receitas, e visualizem relatórios e gráficos detalhados para uma melhor compreensão de suas finanças.',
     tecnologies:
-      'JavaScript, CSS, React.JS, TypeScript, Vite, Flexbox e CSS Grid, React Hook Form, Local Storage e hooks do React,  ',
+      'Back-end: Node.js, Express, TypeScript, TypeORM, PostgreSQL, JWT, Bcrypt, Cors, Zod, Docker, Dotenv, Vitest e outras dependências.',
     notes:
-      'A criação deste projeto teve como objetivo aprofundar meus estudos em React, TypeScript, JavaScript e estilização. Durante o desenvolvimento, explorei conceitos essenciais, como Componentização, Propriedades, Estados, Imutabilidade e a implementação de Hooks do React. Destaquei a persistência de dados no Local Storage como parte fundamental da experiência do usuário, tornando a aplicação prática e eficiente para o gerenciamento de tarefas diárias.',
-    id: 'To_do_List',
-    linkGit: 'https://github.com/LucasfNeves/Todo-list-reactjs',
-    linkDeploy: 'https://todo-list-reactjs-tau.vercel.app/',
+      'O MyCashly foi desenvolvido com o objetivo de aprimorar minhas habilidades em desenvolvimento full-stack, explorando conceitos avançados de back-end e front-end. O back-end foi construído com Node.js, Express, TypeScript, TypeORM, PostgreSQL, JWT, Bcrypt, Cors, Zod, Docker, Dotenv, Vitest e outras dependências. Utilizei uma estratégia de autenticação baseada em JWT, com Refresh Token e validação de dados com Zod. O back-end foi testado com Vitest, garantindo a qualidade e confiabilidade do código. O MyCashly foi projetado para ser uma aplicação prática e eficiente, oferecendo aos usuários uma experiência intuitiva e agradável para o gerenciamento de suas finanças pessoais.',
+    id: 'MyCashly_Backend',
+    linkGit: 'https://github.com/LucasfNeves/mycashly-api',
+    linkDeploy: 'https://mycashly-api.onrender.com/api-docs/#/',
   },
   {
     image: imageMycashlyDetails,
