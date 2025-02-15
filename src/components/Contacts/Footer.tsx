@@ -8,9 +8,7 @@ export function Footer() {
         target={'_blank'}
         variant="regular"
         icons={<LinkedinLogo className="h-7 w-7" />}
-        linkSocial={
-          'https://www.linkedin.com/in/lucas-farias-das-neves-118845239/'
-        }
+        linkSocial={'https://www.linkedin.com/in/lucas-farias-das-neves/'}
         title="Linkedin"
       />
       <ButtonSmall

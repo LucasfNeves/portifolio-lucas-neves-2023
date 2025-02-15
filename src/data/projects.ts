@@ -1,8 +1,15 @@
 import ImageDeliveryBurguer from '../assets/Image-delivery-burguer.png'
 import ImageToDoList from '../assets/todo-list.svg'
-import ImageTailwindUI from '../assets/next-tailwind-ui.svg'
+import ImageMycashly from '../assets/detailsImagesProjects/mycashly.svg'
 
 const projectsList = [
+  {
+    title: 'MyCashly - Controle Financeiro',
+    date: 'Jan - 2025',
+    description: 'Aplicativo de controle financeiro pessoal',
+    image: ImageMycashly,
+    id: 'MyCashly',
+  },
   {
     title: 'Delivery Burguer',
     date: 'Nov - 2023',
@@ -16,13 +23,6 @@ const projectsList = [
     description: 'Checklist para registrar suas tarefas do dia a dia',
     image: ImageToDoList,
     id: 'To_do_List',
-  },
-  {
-    title: 'Next - Tailwind UI',
-    date: 'Nov - 2023',
-    description: 'Dashboard de configurações com Tailwind e Next',
-    image: ImageTailwindUI,
-    id: 'Next_Tailwind_UI',
   },
 ]
 

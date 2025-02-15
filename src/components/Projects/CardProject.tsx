@@ -24,8 +24,14 @@ export function CardProject({
       key={id}
       className="trasition group relative flex min-h-[21.5rem] w-full flex-col items-center justify-center rounded-2xl bg-gray-800 px-7 duration-200 ease-in-out hover:scale-105  hover:bg-opacity-50 sm:w-[24rem] md:w-[23rem] lg:w-full lg:items-start xl:w-[23rem]"
     >
-      <figure className="trasition mb-2 duration-200 ease-in-out group-hover:opacity-50">
-        <Image width={338} height={190.04} src={image} alt={''} />
+      <figure className="trasition mb-2 object-cover duration-200 ease-in-out group-hover:opacity-50">
+        <Image
+          className="rounded-md object-cover"
+          width={338}
+          height={190.04}
+          src={image}
+          alt={''}
+        />
       </figure>
 
       <div className="trasition flex flex-col items-start duration-200 ease-in-out group-hover:opacity-50">

@@ -6,21 +6,23 @@ export function Describe() {
     <div className="flex flex-col gap-2">
       <SubTitle>Minhas principais habilidades</SubTitle>
       <Paragraph>
-        Ao longo da minha jornada como desenvolvedor web, adquiri proficiência
-        em diversas tecnologias-chave. Possuo sólidos fundamentos em{' '}
+        Ao longo da minha jornada como desenvolvedor web, desenvolvi projetos
+        reias em diversas tecnologias. Possuo experiência{' '}
         <strong className="font-bold text-cyan-400">
-          JavaScript, HTML5, CSS3, TypeScript, ReactJS e NextJS, TailwindCSS,
-          Styled-Components, Git e GitHub
+          JavaScript, TypeScript, HTML, CSS, React.js, Next.js, TailwindCSS,
+          Styled-Components, Sass, Git, GitHub, CI/CD, Docker, Vitest, Jest,
+          Node.JS, Express, PostgreSQL, MySQL, MongoDB, REST API, JWT, SEO,
+          Acessibilidade, Responsividade, Design Patterns, Clean Code, SOLID,
+          Firebase e outras tecnologias.
         </strong>{' '}
         . Utilizo o <strong className="font-bold text-cyan-400">Figma</strong>{' '}
         para aprimorar a experiência do usuário, integrando design e
         desenvolvimento de maneira sinérgica.
       </Paragraph>
       <Paragraph>
-        Encaro a área da tecnologia como uma oportunidade constante de evolução.
-        Estou continuamente em busca de novos conhecimentos para impulsionar meu
-        desenvolvimento profissional e aprimorar ainda mais as habilidades que
-        já possuo.
+        A tecnologia é, para mim, uma oportunidade constante de evolução. Estou
+        sempre em busca de novos conhecimentos para impulsionar meu crescimento
+        profissional e aprimorar ainda mais as habilidades que já possuo.
       </Paragraph>
     </div>
   )

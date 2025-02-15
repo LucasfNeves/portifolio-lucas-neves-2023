@@ -1,6 +1,6 @@
 import imageDeliveryBurguerDetails from './../assets/detailsImagesProjects/delivery-burguer.svg'
 import imageToDoListDetails from './../assets/detailsImagesProjects/to-do-list.svg'
-import imageTailwindUIDetails from './../assets/detailsImagesProjects/tailwind-next-ui.svg'
+import imageMycashlyDetails from './../assets/detailsImagesProjects/mycashly.svg'
 
 const projectDetailsList = [
   {
@@ -36,20 +36,20 @@ const projectDetailsList = [
     linkDeploy: 'https://todo-list-reactjs-tau.vercel.app/',
   },
   {
-    image: imageTailwindUIDetails,
-    title: 'Next - Tailwind UI',
-    date: 'Nov - 2023',
-    my_role: 'Front-end',
+    image: imageMycashlyDetails,
+    title: 'MyCashly - Controle Financeiro',
+    date: 'Jan - 2025',
+    my_role: 'Full-stack',
     team: 'Lucas Farias Neves',
     about:
-      'Essa página foi desenvolvida com o propósito de estudar a biblioteca de estilização Tailwind CSS, que adota a abordagem de classes de utilitários (utility classes) para aplicar o CSS diretamente no HTML.',
+      'O MyCashly é um aplicativo de controle financeiro pessoal, projetado para ajudar os usuários a gerenciar suas finanças de forma eficaz e prática. A aplicação oferece uma visão geral das despesas, receitas e investimentos, permitindo que os usuários adicionem, editem e excluam transações, categorizem despesas e receitas, e visualizem relatórios e gráficos detalhados para uma melhor compreensão de suas finanças.',
     tecnologies:
-      'JavaScript, CSS, React.JS, TypeScript, Next, Tailwind CSS, Radiix, Memo.   ',
+      'Back-end: Node.js, Express, TypeScript, TypeORM, PostgreSQL, JWT, Bcrypt, Cors, Zod, Docker, Dotenv, Vitest e outras dependências. Front-end: React.JS, TypeScript, Vite, Tailwind CSS, Axios, React Hook Form, React Router, React Query, React Hooks, ShadCN, e outras dependências. ',
     notes:
-      'Conceitos essenciais foram abordados durante o projeto, incluindo configurações do Tailwind CSS utilizando o NextJS, fundamentos do Tailwind CSS, desenvolvimento mobile-first, seletores e estados, responsividade e breakpoints, valores arbitrários e extensões de propriedades CSS, variantes e variantes com slots, animações, estilização com Tailwind CSS, Dark Mode, variáveis de ambiente, e a integração de componentes usando Tailwind CSS e Radiix. O projeto proporcionou uma compreensão aprofundada e prática desses conceitos, contribuindo para a expansão do conhecimento em design responsivo e eficaz.',
-    id: 'Next_Tailwind_UI',
-    linkGit: 'https://github.com/LucasfNeves/settings-page-tailwind-next',
-    linkDeploy: 'https://settings-page-tailwind-next.vercel.app/',
+      'O MyCashly foi desenvolvido com o objetivo de aprimorar minhas habilidades em desenvolvimento full-stack, explorando conceitos avançados de back-end e front-end. O back-end foi construído com Node.js, Express, TypeScript, TypeORM, PostgreSQL, JWT, Bcrypt, Cors, Zod, Docker, Dotenv, Vitest e outras dependências. O front-end foi desenvolvido com React.JS, TypeScript, Vite, Tailwind CSS, Axios, React Hook Form, React Router, React Query, React Hooks, ShadCN, e outras dependências. Durante o desenvolvimento, foram aplicados conceitos de autenticação, Refresh Token, autorização, validação de dados, segurança, performance, testes, otimização de código, responsividade e acessibilidade. O MyCashly foi projetado para ser uma aplicação prática e eficiente, oferecendo aos usuários uma experiência intuitiva e agradável para o gerenciamento de suas finanças pessoais.',
+    id: 'MyCashly',
+    linkGit: 'https://github.com/LucasfNeves/mycashly-frontend',
+    linkDeploy: 'https://mycashly.vercel.app/',
   },
 ]
 

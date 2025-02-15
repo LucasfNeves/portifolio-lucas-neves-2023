@@ -18,9 +18,7 @@ export function SocialMedia() {
           target={'_blank'}
           title="Linkedin"
           icons={<LinkedinLogo weight="fill" className="h-6 w-6" />}
-          linkSocial={
-            'https://www.linkedin.com/in/lucas-farias-das-neves-118845239/'
-          }
+          linkSocial={'https://www.linkedin.com/in/lucas-farias-das-neves/'}
         />
       </div>
     </section>
